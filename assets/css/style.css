@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner_image {
+    height: 519px !important;
+}
+
+.flex_flow_logo {
+    height: 60px;
+    margin: 8px 0 0 0 !important;
+}
+
+.carousel-inner-img{
+    background:url('../images/banner-pattern-cr.png');
+    opacity: 0.3;
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-size: 450px 450px;
+    animation: rotate 4s infinite linear;
+    
+}
+/* @keyframes rotate{
+100% {
+    transform:rotatez(360deg); 
+}
+} */
+
+/* services_section start*/
+.custom_designed_heading_icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.custom_designed_heading_icon img {
+    height: 53px;
+    width: 50px;
+}
+
+.custom_designed_heading_icon::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 55px;
+    background-color: #734978;
+    top: 28px;
+    left: 43%;
+}
+
+.custom_designed_heading_icon::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 55px;
+    background-color: #734978;
+    top: 28px;
+    right: 43%;
+}
+
+.service_listing {
+    /* background-image: linear-gradient(120deg, #c98199, #734978); */
+    /* color:#fff; */
+    /* border-radius: 10px; */
+    color: black;
+}
+
+.service_listing .service_listing_image img {
+    height: 75px;
+    width: 75px;
+    padding: 10px;
+    background-image: linear-gradient(120deg, #c98199, #734978);
+    border-radius: 50%;
+}
+
+.service_listing p {
+    color: #acacac;
+}
+
+.service_listing:hover{
+    background-image: linear-gradient(120deg, #c98199eb, #734978), url('../images/bwlogo.png');
+    border-radius: 10px;
+    color:#fff !important;
+    background-repeat: no-repeat;
+}
+.service_listing:hover .service_listing_image img{
+    background: transparent;
+}
+.service_listing:hover p{
+    color:#fff;
+}
+
+@media screen and (max-width: 600px) {
+    .custom_designed_heading_icon::after {
+       left: 25%;
+    }
+    
+    .custom_designed_heading_icon::before {
+        right: 25%;
+    }
+  }
+/* services_section end */
