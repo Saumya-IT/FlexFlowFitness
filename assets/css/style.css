@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
 }
 
 .banner_image {
@@ -16,7 +17,7 @@
 
 .carousel-inner-img{
     background:url('../images/banner-pattern-cr.png');
-    opacity: 0.3;
+    /* opacity: 0.3; */
     background-repeat: no-repeat;
     background-position: 95%;
     background-size: 450px 450px;
