@@ -1,19 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    /* font-family: 'Poppins', sans-serif; */
-}
-
 .banner_image {
     height: 519px !important;
 }
 
-.flex_flow_logo {
-    height: 60px;
-    margin: 8px 0 0 0 !important;
-}
+
 
 .carousel-inner-img{
     background:url('../images/banner-pattern-cr.png');
@@ -35,31 +24,6 @@
     position: relative;
     display: flex;
     justify-content: center;
-}
-
-.custom_designed_heading_icon img {
-    height: 53px;
-    width: 50px;
-}
-
-.custom_designed_heading_icon::after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 55px;
-    background-color: #734978;
-    top: 28px;
-    left: 43%;
-}
-
-.custom_designed_heading_icon::before {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 55px;
-    background-color: #734978;
-    top: 28px;
-    right: 43%;
 }
 
 .service_listing {
