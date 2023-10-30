@@ -1,0 +1,59 @@
+.accordion-button:not(.collapsed){
+    color:#f9c862;
+    background:#75497b !important;
+    /* border:1px solid #75497b !important; */
+}
+
+.accordion-button:focus{
+    box-shadow:0 0 0 0.25rem #75497b !important;
+}
+
+.plan_card{
+    border-radius:20px;
+    background-image: linear-gradient(-45deg, #fec1503f, #e5d1d777, #cac0cb71);
+}
+
+.plan_type{
+    font-size: 40px;
+    margin:0px;
+    padding:0px;
+}
+
+.plan_card .pricing sup{
+    font-size: 27px;
+}
+.plan_card .pricing span{
+    font-size: 50px; 
+    font-weight: 500;
+}
+
+.plan_card button{
+    border-radius: 15px;
+}
+
+.plan_card button:hover{
+    color:#f9c862;
+}
+
+#how_to_become_member_section{
+    background-image: linear-gradient(-45deg, #fec1503f, #e5d1d7b4, #cac0cb9d), url('../images/dumbbells-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.how_to_become_member_section_header{
+    font-size: 45px; 
+    font-weight: 600;
+}
+
+@media (max-width: 570px) {
+    #how_to_become_member_section{
+        padding:10px 0;
+    }
+    .how_to_become_member_section_header{
+        font-size: 25px; 
+        font-weight: 600;
+    }
+
+}

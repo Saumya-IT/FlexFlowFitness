@@ -1,0 +1,181 @@
+/* CSS for the Yoga Section */
+#yoga {
+    background-color: white; 
+    padding-top: auto; 
+    padding-top: 100px;
+    
+    display: flex;
+}
+
+.benefits {
+    display: flex; 
+    justify-content: space-around;
+    align-items:center; 
+    flex-wrap: wrap; 
+}
+
+/* CSS for the "Information about Yoga" section */
+#yoga .Info {
+    text-align: center; 
+}
+
+#yoga .Info h1 {
+    font-size: 48px; 
+    background-image: linear-gradient(-45deg, #fec1503f, #e5d1d7b4, #cac0cb9d), url('../assets/images/y1.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#yoga .Info li {
+    text-align: left;
+    margin: 10px 0; 
+    font-size: 16px;
+}
+
+/* CSS for the "Yoga Styles" section */
+
+.yoga-details .types {
+    text-align: center; 
+}
+
+.yoga-details .types h2 {
+    font-size: 24px; 
+    margin-bottom: 20px; 
+}
+
+.yoga-details .types p {
+    text-align: left; 
+    margin: 10px 0; 
+    font-size: 16px;
+}
+
+.yoga-details .types ul {
+    text-align: left; 
+    list-style: none; 
+    padding: 0;
+}
+
+.yoga-details .types li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.yoga-details .types li strong {
+    font-weight: bold;
+}
+
+/* CSS for the "Benefits of Yoga" section */
+#yoga-details .benefits_of_yoga {
+    text-align: center; 
+}
+
+#yoga-details .benefits_of_yoga h2 {
+    font-size: 24px;
+    margin-bottom: 20px; 
+}
+
+#yoga-details .benefits {
+    display: flex;
+    justify-content: center; 
+}
+
+#yoga-details .benefit {
+    text-align: center; 
+    margin: 0 20px; 
+    max-width: 300px; 
+}
+
+#yoga-details .benefit img {
+    width: 100%; 
+}
+
+#yoga-details .benefit p {
+    font-size: 16px; 
+    margin-top: 10px; 
+}
+
+/* CSS for the "Yoga for Beginners" section */
+.yoga-details .beginner {
+    text-align: center; 
+}
+
+.yoga-details .beginner h2 {
+    font-size: 24px; 
+    margin-bottom: 20px; 
+}
+
+.yoga-details .beginner p {
+    text-align: left; 
+    margin: 10px 0; 
+    font-size: 16px; 
+}
+
+.yoga-details .beginner ol {
+    text-align: left;
+    list-style-type: none;
+    padding: 0; 
+}
+
+.yoga-details .beginner li {
+    font-size: 16px;
+    margin-bottom: 20px; 
+}
+
+.yoga-details .beginner img {
+    width: 100%; 
+}
+
+/* CSS for the "Advanced Yoga Practices" section */
+.yoga-details .advanced {
+    text-align: center;
+}
+
+.yoga-details .advanced h2 {
+    font-size: 24px; 
+    margin-bottom: 20px; 
+}
+
+.yoga-details .advanced p {
+    text-align: left; 
+    margin: 10px 0;
+    font-size: 16px; 
+}
+
+.yoga-details .advanced video {
+    width: 100%; 
+    max-width: 400px; 
+}
+
+#yoga {
+    background-image: url('../assets/images/yoga-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+    color: black; /* Text color */
+}
+
+.yoga-details {
+    background-color: #e5d1d777; /* Background color */
+    padding: 20px;
+    color: #000; /* Text color */
+}
+
+#yoga-details1 {
+    background-color: #cac0cb71; /* Background color */
+    padding: 20px;
+    color: #000; /* Text color */
+}
+
+.yoga-details2 {
+    background-color: #75497b; /* Background color */
+    padding: 20px;
+    color: #fff; /* Text color */
+}
+
+.yoga-details3 {
+    background-color: #e5d1d777; /* Background color */
+    padding: 20px;
+    color: #000; /* Text color */
+}

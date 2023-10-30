@@ -169,36 +169,6 @@ ion-icon { pointer-events: none; }
 } */
 
 /* services_section start*/
-.custom_designed_heading_icon {
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.custom_designed_heading_icon img {
-    height: 53px;
-    width: 50px;
-}
-
-.custom_designed_heading_icon::after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 55px;
-    background-color: #734978;
-    top: 28px;
-    left: 43%;
-}
-
-.custom_designed_heading_icon::before {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 55px;
-    background-color: #734978;
-    top: 28px;
-    right: 43%;
-}
 
 .service_listing {
     /* background-image: linear-gradient(120deg, #c98199, #734978); */
@@ -232,15 +202,6 @@ ion-icon { pointer-events: none; }
     color:#fff;
 }
 
-@media screen and (max-width: 600px) {
-    .custom_designed_heading_icon::after {
-       left: 25%;
-    }
-    
-    .custom_designed_heading_icon::before {
-        right: 25%;
-    }
-  }
 /* services_section end */
 
  /* Media Query for Mobile Devices */ 

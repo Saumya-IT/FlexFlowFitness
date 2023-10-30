@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+:root {
+    --inner-banner-img: url("../images/contact_innerbannner.jpg");
+}
+
+.flex_flow_logo {
+    height: 60px;
+    margin: 8px 0 0 0 !important;
+}
+
+header{
+    width:100%;
+    position:fixed;
+    z-index: 1;
+    background: #fff;
+}
+
+main{
+    padding-top: 60px;
+}
+
+.custom_designed_heading_icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.custom_designed_heading_icon img {
+    height: 53px;
+    width: 50px;
+}
+
+.custom_designed_heading_icon::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 55px;
+    background-color: #734978;
+    top: 28px;
+    left: 43%;
+}
+
+.custom_designed_heading_icon::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 55px;
+    background-color: #734978;
+    top: 28px;
+    right: 43%;
+}
+
+.custom_title{
+  position: relative;
+}
+
+.custom_title::before{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width:80px;
+  background-color: #734978;
+  top:55%;
+  left:70%;
+}
+
+.custom_title::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width:80px;
+  background-color: #734978;
+  top:55%;
+  /* margin-left: 10px; */
+  left:13%;
+}
+
+.inner_banner{
+    background-image: var(--inner-banner-img);
+    height:330px;  
+    width:100%;  
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(#000000af, #000000af),var(--inner-banner-img);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner_banner h1{
+    color:#fff;
+    font-size: 55px;
+}
+
+
+.input-field {
+    max-width: 380px;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 15px 0;
+    height: 55px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+  }
+
+.input-field i {
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.1rem;
+  }
+  
+  .input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .input-field input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+  }
+
+  textarea.input-field, textarea.input-field:focus{
+    border-radius: 20px;
+    outline:none;
+    border:none;
+    height:100px;
+    padding:10px 20px;
+    font-family:Arial, FontAwesome;
+    margin:0px;
+  }
+
+  textarea.input-field::placeholder{
+    color: #aaa;
+    font-weight: 500;
+    /* padding:10px 20px; */
+    font-size: 1.1rem;
+  }
+  
+
+  .btn {
+    width: 150px;
+    background-image: linear-gradient(-45deg, #c98199 10%, #734978 50%);
+    background-size: 300% 100%;
+    transition: all .4s ease-in-out;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #ffd26b;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .btn:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+  }
+
+  .btn.transparent {
+    width: 110px;
+    height: 35px;
+    font-size: 0.7rem;
+  }
+
+  .btn.transparent {
+    margin: 0;
+    background: none;
+    border: 2px solid #fff;
+    width: 130px;
+    height: 41px;
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+
+  .invalid_input{
+    color:red;
+    width: 400px;
+    font-size: 12px;
+}
+
+textarea.invalid_input{
+ width: 100%;
+}
+
+
+/* media query for mobile */
+@media (max-width: 570px) {
+  .inner_banner{
+    display: none;
+  }
+  .custom_title::after{
+    left:7%;
+  }
+  
+    .custom_designed_heading_icon::after {
+       left: 25%;
+    }
+    
+    .custom_designed_heading_icon::before {
+        right: 25%;
+    }
+  
+}
+
+/* media query for tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .custom_title::before{
+    left:63%;
+  }
+
+  .custom_title::after{
+    left:25%;
+  }
+}
