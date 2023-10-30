@@ -1,0 +1,177 @@
+#member,
+#tarining {
+  height: 100vh;
+}
+
+.background-banner {
+  height: 100vh;
+  position: relative;
+}
+
+.member-overlay,
+.training-overlay,
+.tracking-overlay {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.track-poster {
+  top: -1.5rem;
+  right: -1.5rem;
+}
+
+.track-content {
+  z-index: 15;
+}
+
+.member-overlay {
+  /* background-image: linear-gradient(to left, rgba(220,132,163,.2) 20%, rgba(220,132,163,.2)); */
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5) 20%,
+    rgba(0, 0, 0, 0.4)
+  );
+}
+.training-overlay {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5) 20%,
+    rgba(0, 0, 0, 0.4)
+  );
+}
+.tracking-overlay {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(253, 193, 85, 0.5)
+  );
+}
+
+.member-background {
+  height: 100vh;
+  object-fit: cover;
+  /* z-index: 1; */
+}
+
+.member-body {
+  text-align: justify;
+}
+
+.member-card {
+  z-index: 15;
+}
+
+.member-item {
+  /* background-image: linear-gradient(to right, rgba(0,0,0,0.5) 20%, rgba(0,0,0,0.4)); */
+  /* background-image: linear-gradient(to left, rgba(120,71,124,0.6) 20%, rgba(120,71,124,.2)); */
+  background-image: url(../images/banner-pattern-cr-old.png);
+  background-position: bottom -5rem right -3rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.bg-default {
+  background-image: url(../images/banner-pattern-cr-old.png);
+  background-position: bottom -5rem right -3rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.bg-custom {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  /* background-image: linear-gradient(to left, rgba(120,71,124,0.6) 20%, rgba(120,71,124,.2));  */
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.99) 60%,
+    rgba(255, 255, 255, 0.75)
+  );
+}
+.member-link,
+.member-body,
+.member-heading,
+.bring-front {
+  position: relative;
+  z-index: 12;
+}
+
+#track-yoga {
+  background-image: linear-gradient(-45deg, #c9819982 5%, #734978d1 50%),
+    url(../images/bg-gradient.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#become-member {
+  background-image: linear-gradient(120deg, #c98199eb, #734978),
+    url(../images/bwlogo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#join-banner {
+  height: 50vh;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: 12rem;
+  background-position: center;
+  background-blend-mode: screen;
+}
+
+.team-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.team-designation {
+  color: #b16fb8;
+  font-weight: 500;
+  text-align: center;
+}
+
+.team-card:hover {
+}
+
+.review-banner {
+  height: 90vh;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: 12rem;
+  background-position: center;
+  background-blend-mode: screen;
+  background-color: #734978;
+}
+
+.footer-banner{
+    background-color: lightgray;
+    padding: 4rem 0 0 0;
+}
+
+.footer-link a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .member-background,
+  .member-overlay,
+  #background-banner,
+  #member {
+    min-height: 100vh;
+  }
+}

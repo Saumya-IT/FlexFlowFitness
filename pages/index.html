@@ -1,114 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home Page</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css"/>
-    <script src="../assets/js/bootstrap.min.js"></script>
+<head>
+  <title>Home Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../assets/css/style.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/flat-icons@1.0.0/creative.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <header id="navbar">
-      <div class="container">
-      <a class="navbar-brand" href="#">
-        <img
-          src="../assets/images/logo.png"
-          alt="Website-Logo"
-          class="img-fluid flex_flow_logo m-0 p-0"
-        />
+  <link rel="stylesheet" href="../assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/home.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="	https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css" />
+  <link href="https://cdn.jsdelivr.net/npm/flat-icons@1.0.0/creative.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header id="navbar">
+    <div class="container p-3">
+      <a class="navbar-brand my-auto" href="#">
+        <img src="../assets/images/logo.png" alt="Website-Logo" width="180"
+          class="img-fluid flex_flow_logo my-auto p-0" />
       </a>
-      <nav class="navbar navbar-expand-lg float-end my-2">
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#">Clubs</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Members Benefits</a>
-              </li>
-              <li class="nav-item mx-2 dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Classes
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Group Fitness</a></li>
-                  <li><a class="dropdown-item" href="#">Digital Classes</a></li>
-                </ul>
-              </li>
-              <li class="nav-item mx-2 dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Training
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Personal Training</a></li>
-                  <li><a class="dropdown-item" href="#">Pilates</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+      <nav class="navbar navbar-expand-lg float-end my-auto">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item mx-2">
+              <a class="nav-link active" aria-current="page" href="#">Clubs</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">Members Benefits</a>
+            </li>
+            <li class="nav-item mx-2 dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Classes
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Group Fitness</a></li>
+                <li><a class="dropdown-item" href="#">Digital Classes</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mx-2 dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Training
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Personal Training</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Pilates</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
-    </header>
-    <main>
+  </header>
+
+  <main>
     <section id="banner">
       <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner carousel-inner-img">
-          <div class="carousel-item banner_image h-auto h-lg-25 active">
-            <!-- <img src="../assets/images/1.jpg" class="d-block w-100" alt="..."> -->
+        <div>
+          <div class="text-overlay d-flex">
+            <h1 class="text-white w-50 my-auto p-5 carousel-text-overlay-size">
+              <div class="text-nowrap">Elevate your</div>
+              <div class="text-nowrap fs-1 lh-4">Well-being ,</div>
+              <div class="text-nowrap">Embrace the</div>
+              <div class="text-nowrap fs-1">Serenity Within.</div>
+            </h1>
           </div>
-          <div class="carousel-item banner_image h-auto h-lg-25">
-            <!-- <img src="../assets/images/2.jpg" class="d-block w-100" alt="..."> -->
-          </div>
-          <div class="carousel-item banner_image h-auto h-lg-25">
-            <!-- <img src="../assets/images/3.jpg" class="d-block w-100" alt="..."> -->
+          <div class="carousel-inner carousel-inner-img">
+            <div class="carousel-item banner_image h-auto h-lg-25 active">
+              <div class="overlay"></div>
+              <img src="../assets/images/1.jpg" class="d-block w-100 carousel-image" alt="..." />
+            </div>
+            <div class="carousel-item banner_image h-auto h-lg-25">
+              <div class="overlay"></div>
+              <img src="../assets/images/2.jpg" class="d-block w-100 carousel-image" alt="..." />
+            </div>
+            <div class="carousel-item banner_image h-auto h-lg-25">
+              <div class="overlay"></div>
+              <img src="../assets/images/3.jpg" class="d-block w-100 carousel-image" alt="..." />
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
     </section>
 
-    <section class="contair-fluid services_section my-5">
+    <section id="member">
+      <div class="background-banner">
+        <div class="member-overlay"></div>
+        <img src="../assets/images/yoga_1.jpg" class="d-lock w-100 member-background" alt="..." />
+        <div class="position-absolute top-0 bottom-0 end-0 start-0 m-0 row">
+          <div class="col-12 col-sm-4 position-relative">
+            <div class="member-card position-absolute top-0 bottom-0 end-0 start-0 text-black px-md-5 d-flex h-100">
+              <div class="member-item p-5 mx-md-4 m-sm-5 m-4 my-md-auto shadow-lg rounded">
+                <div class="bg-custom rounded"></div>
+                <h4 class="member-heading fw-bolder mb-3">
+                  Membership With Benefits
+                </h4>
+                <p class="member-body mb-4 fw-normal">
+                  Unrivaled Group Fitness classes. Unparalleled Personal Training.
+                  Studios that inspire you to perform and luxury amenities that
+                  keep you feeling your best.
+                </p>
+                <a class="member-link text-black fw-medium">View Membership Benefits</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-8 position-relative">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="training">
+      <div class="background-banner">
+        <div class="training-overlay"></div>
+        <img src="../assets/images/yoga_2.jpg" class="d-lock w-100 member-background" alt="training-background" />
+        <div class="row position-absolute top-0 bottom-0 end-0 start-0 m-0">
+          <div class="left-content col-12 col-sm-4 position-relative">
+
+          </div>
+          <div class="right-content col-12 col-sm-8 position-relative p-2">
+            <div class="member-card position-absolute top-0 bottom-0 end-0 start-0 text-black d-flex p-sm-5 m-0">
+              <div class="owl-carousel owl-carousel1 my-auto">
+                <div class="member-item p-5 bg-white mx-3 my-3 h-50 col-auto col-sm-12 rounded">
+                  <div class="bg-custom rounded"></div>
+                  <h4 class="member-heading fw-bolder mb-3">
+                    Unlimited Classes
+                  </h4>
+                  <p class="member-body mb-4 fw-normal">
+                    Classes curated and developed by the industry's best talent, bringing results through innovation.
+                  </p>
+                  <a class="member-link text-black fw-medium">Discover Classes</a>
+                </div>
+
+                <div class="member-item p-5 bg-white mx-3 my-3 h-50 col-auto col-sm-12 rounded">
+                  <div class="bg-custom rounded"></div>
+                  <h4 class="member-heading fw-bolder mb-3">
+                    Personal Training
+                  </h4>
+                  <p class="member-body mb-4 fw-normal">
+                    Performance at its highest level with renowned Personal Training.
+                  </p>
+                  <a class="member-link text-black fw-medium">Discover Personal Training</a>
+                </div>
+
+                <div class="member-item p-5 bg-white mx-3 my-3 h-50 col-auto col-sm-12 rounded">
+                  <div class="bg-custom rounded"></div>
+                  <h4 class="member-heading fw-bolder mb-3">
+                    Studio Pilates
+                  </h4>
+                  <p class="member-body mb-4 fw-normal">
+                    A purely authentic Pilates experience that strengthens and creates balance in the body.
+                  </p>
+                  <a class="member-link text-black fw-medium">Discover Pilates</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="track-yoga">
+      <div class="background-banner">
+        <div class="tracking-overlay"></div>
+        <div class="track-content position-relative top-0 bottom-0 right-0 left-0 h-100">
+          <div class="container-fluid row d-flex mx-auto h-100">
+            <div class="left-content col-12 col-md-6 my-auto py-4 p-md-5 position-relative">
+              <div class="row m-0 p-4 p-md-5 member-item bg-white shadow position-relative rounded">
+                <div class="bg-custom rounded"></div>
+                <h6 class="row fw-bold bring-front">
+                  // Learn About Yoga
+                </h6>
+                <h1 class="row bring-front">
+                  Develop Positive, Peaceful & Calm Mind While You Do Yoga.
+                </h1>
+                <p class="row my-4 text-justify bring-front">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatibus corrupti laborum aut ut
+                  eaque nisi nesciunt quae omnis excepturi aperiam dolore tenetur et qui, distinctio repudiandae quia,
+                  quidem delectus.
+                </p>
+                <div class="row p-3 bring-front">
+                  <button class="btn btn-outline-dark col-auto p-3 px-5 fw-bold">Read More</button>
+                </div>
+              </div>
+            </div>
+            <div class="right-content d-none d-md-block col-12 col-md-6 my-auto p-5">
+              <div class="bg-white rounded shadow">
+                <img src="../assets/images/1.jpg" class="img-fluid rounded shadow position-relative track-poster"
+                  alt="Poster">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid services_section my-5">
       <div class="custom_designed_heading_icon">
-      <img src="../assets/images/icon.png">
+        <img src="../assets/images/icon.png">
       </div>
       <h4 class="text-center fw-bold">What we offer</h4>
 
@@ -140,23 +263,253 @@
           </div>
           <h5>Heal Your Emotions</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et.</p>
-      </div>
-      <div class="service_listing col-12 col-lg-3 col-sm-6 text-center p-4 mx-5 my-1">
-        <div class="service_listing_image mb-4">
-          <img src="../assets/images/yoga.png">
         </div>
-        <h5>Heal Your Emotions</h5>
+        <div class="service_listing col-12 col-lg-3 col-sm-6 text-center p-4 mx-5 my-1">
+          <div class="service_listing_image mb-4">
+            <img src="../assets/images/yoga.png">
+          </div>
+          <h5>Heal Your Emotions</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et.</p>
-      </div>
-      <div class="service_listing col-12 col-lg-3 col-sm-6 text-center p-4 mx-5 my-1">
-        <div class="service_listing_image mb-4">
-          <img src="../assets/images/yoga.png">
         </div>
-        <h5>Heal Your Emotions</h5>
+        <div class="service_listing col-12 col-lg-3 col-sm-6 text-center p-4 mx-5 my-1">
+          <div class="service_listing_image mb-4">
+            <img src="../assets/images/yoga.png">
+          </div>
+          <h5>Heal Your Emotions</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et.</p>
-      </div>
+        </div>
       </div>
     </section>
+
+
+    <section id="become-member">
+      <div id="join-banner">
+        <div class="container-fluid m-auto">
+          <div class="text-white text-center">
+            <h2 class="my-4">Become A Yoga Member</h2>
+            <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quod repudiandae maxime
+              tenetur fuga
+              temporibus, velit rem culpa minima dolore.</p>
+            <button class="btn btn-light col-auto p-3 px-5 fw-bold">Join Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team container-fluid my-5">
+      <div class="custom_designed_heading_icon">
+        <img src="../assets/images/icon.png">
+      </div>
+      <h4 class="text-center fw-bold my-3">Our Awesome Team</h4>
+      <div class="row m-0 p-0 mt-lg-0 mt-5 d-flex justify-content-center">
+        <div class="team-card col-12 col-md-6 col-xl-3 my-3 my-md-2 text-center">
+          <img src="../assets/images/team-1.png" class="rounded" alt="Team-1">
+          <div class="team-name">Ellia Smith</div>
+          <div class="team-designation">Yoga Instructor</div>
+        </div>
+        <div class="team-card col-12 col-md-6 col-xl-3 my-3 my-md-2 text-center">
+          <img src="../assets/images/team-2.png" class="rounded" alt="Team-2">
+          <div class="team-name">Jane Snow</div>
+          <div class="team-designation">Yoga Teacher</div>
+        </div>
+        <div class="team-card col-12 col-md-6 col-xl-3 my-3 my-md-2 text-center">
+          <img src="../assets/images/team-3.png" class="rounded" alt="Team-3">
+          <div class="team-name">Jack Smith</div>
+          <div class="team-designation">Yoga Instructor</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="review">
+      <div class="review-banner">
+      
+      </div>
+    </section> -->
+
   </main>
-  </body>
+
+  <!-- <footer id="footer">
+    <div class="footer-banner">
+      <div class="container-fluid d-flex justify-content-around">
+        <div class="row d-flex text-muted p-2">
+          <div class="col p-4 mx-4">
+            <ul class="list-unstyled">
+              <li><img src="../assets/images/logo.png" width="200px"  class="img-fluid"></li>
+              <li class="fw-bold">Toronto, ON</li>
+              <li class="fw-bold">Info@flexflowfitness.com</li>
+              <li class="row">
+                <div class="col"><img src="" alt="fb"></div>
+                <div class="col"><img src="" alt="x"></div>
+                <div class="col"><img src="" alt="insta"></div>
+                <div class="col"><img src="" alt="in"></div>
+              </li>
+            </ul>
+          </div>
+          <div class="col p-4 mx-4">
+            <ul class="list-unstyled">
+              <figcaption class="fw-bold fs-3">Company</figcaption>
+              <li class="my-1 footer-link"><a href="">Home</a></li>
+              <li class="my-1 footer-link"><a href="">About us</a></li>
+              <li class="my-1 footer-link"><a href="">Services</a></li>
+              <li class="my-1 footer-link"><a href="">Our Team</a></li>
+            </ul>
+          </div>
+          <div class="col p-4 mx-4">
+            <ul class="list-unstyled">
+              <figcaption class="fw-bold fs-3">Menu</figcaption>
+              <li class="my-1 footer-link"><a href="">Work</a></li>
+              <li class="my-1 footer-link"><a href="">News</a></li>
+              <li class="my-1 footer-link"><a href="">Testimonials</a></li>
+              <li class="my-1 footer-link"><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col p-4 mx-4">
+            <ul class="list-unstyled">
+              <figcaption class="fw-bold fs-3">Support</figcaption>
+              <li class="my-1 footer-link"><a href="">Support Center</a></li>
+              <li class="my-1 footer-link"><a href="">Partners</a></li>
+              <li class="my-1 footer-link"><a href="">FAQ</a></li>
+              <li class="my-1 footer-link"><a href="">Status</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+        <div class="container">
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo">
+                    <img src="../assets/images/logo.png" class="img-fluid" width="200px" alt="Casmart logo">
+                </a>
+
+                <div class="footer-text fw-bold">
+                    Toronto, ON
+                </div>
+                <div class="footer-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rerum earum corrupti culpa optio
+                    vel minus, architecto.
+                </div>
+
+                <ul class="social-list">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-pinterest"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="footer-list-title">Company</p>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Home</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">About us</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Services</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Our Team</a>
+                </li>
+
+            </ul>
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="footer-list-title">Menu</p>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Work</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">News</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Testimonials</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Contact</a>
+                </li>
+
+            </ul>
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="footer-list-title">Support</p>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Support Center</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Partners</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">FAQ</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Status</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+</footer>
+
+  <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/owl.carousel.min.js"></script>
+  <script src="../assets/js/home.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
