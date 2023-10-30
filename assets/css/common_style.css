@@ -203,6 +203,7 @@ textarea.invalid_input{
 }
 
 
+
 /* media query for mobile */
 @media (max-width: 570px) {
   .inner_banner{
