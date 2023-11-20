@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="../assets/css/common_style.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/membership_style.css" />
-    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
     <link rel="icon" type="image/x-icon" href="../assets/images/icon.png">
+    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
 </head>
 
 <body>
@@ -71,15 +73,16 @@
         <section id="membership_section">
             <div class="container py-5">
                 <div class="row">
-                    <div class="col-12 text-center px-5">
+                    <div class="col-12 text-center px-lg-5 px-3">
                         <h2 class="fw-bold">Choose your membership</h2>
                         <p>With 200+ locations and more 24-hour access than any other gym, a flex flow fitness Fitness membership
                             gives you access to programs and amenities that will help you achieve your goals.</p>
                     </div>
                     <div class="col-12">
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-lg-3 col-11 text-center py-5 m-3 plan_card">
-                                <h2 class="plan_type">Essential</h2>
+                        
+                        <div id="owl-carousel" class="row d-flex justify-content-center owl-carousel owl-theme wow fadeInUp">
+                            <div class="col-lg-10 col-11 text-center py-5 m-lg-3 m-2 plan_card">
+                                <h2 class="plan_type">Essential <span>Best Value Plan</span></h2>
                                 <p class="m-0 p-0 pricing"><sup>$</sup><span>29</span><sup>.99</sup></p>
                                 <p class="m-0 p-0">every other week</p>
 
@@ -103,8 +106,8 @@
                                     <p class="text-danger"> $49.99 one time fee</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-11 text-center py-5 m-3 plan_card">
-                                <h2 class="plan_type">Premium</h2>
+                            <div class="col-lg-10 col-11 text-center py-5 m-lg-3 m-2 plan_card wow fadeInUp">
+                                <h2 class="plan_type">Premium <span>Recommended</span></h2>
                                 <p class="m-0 p-0 pricing"><sup>$</sup><span>35</span><sup>.99</sup></p>
                                 <p class="m-0 p-0">every other week</p>
 
@@ -128,7 +131,7 @@
                                     <p class="text-danger"> $49.99 one time fee</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-11 text-center py-5 m-3 plan_card">
+                            <div class="col-lg-10 col-11 text-center py-5 m-lg-3 m-2 plan_card wow wow fadeInUp">
                                 <h2 class="plan_type">Ultimate</h2>
                                 <p class="m-0 p-0 pricing"><sup>$</sup><span>39</span><sup>.99</sup></p>
                                 <p class="m-0 p-0">every other week</p>
@@ -153,16 +156,16 @@
                                     <p class="text-danger"> <del>$49.99</del> $0 one time fee</p>
                                 </div>
                             </div>
-                            <div class="col-10 m-3" style="font-size: 12px;">
-                                <p>Club amenities vary by location and are subject to change without notice. Some services and amenities may have an additional cost. Visit a nearby club for a list of available amenities and for more details.</p>
-                            </div>
+                        </div>
+                        <div class="col-10 mt-4 ml-4" style="font-size: 12px;">
+                            <p>Club amenities vary by location and are subject to change without notice. Some services and amenities may have an additional cost. Visit a nearby club for a list of available amenities and for more details.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="how_to_become_member_section" class="my-5 p-lg-5 p-sm-5">
+        <section id="how_to_become_member_section" class="mb-5 p-lg-5 p-sm-5">
             <div class="container">
                 <div class="m-4">
             <p class="how_to_become_member_section_header">HOW TO BECOME A MEMBER</p>
@@ -191,7 +194,69 @@
             </div>
             </div>
         </section>
-
+        <section class="container">
+            <div class="custom_designed_heading_icon">
+                <img src="../assets/images/icon.png">
+                </div>
+                <h4 class="text-center fw-bold">Flex Flow Fitness Benefits</h4>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-5 col-md-5 col-11 m-lg-3 m-md-3 mx-1 my-3 benefits-card wow fadeInUp">
+                    <h3>Personal Trainers</h3>
+                    <p>We're here to help you! Talk to us about how a Personal Trainer can help reach your goals faster.</p>
+                </div>
+                <div class="col-lg-5 col-md-5 col-11 m-lg-3 m-md-3 mx-1 my-3 benefits-card wow fadeInUp">
+                    <h3>Convenience</h3>
+                    <p>255+ locations across Canada, and many gyms open 24 hours a day.</p>
+                </div>
+                <div class="col-lg-5 col-md-5 col-11 m-lg-3 m-md-3 mx-1 my-3 benefits-card wow fadeInUp">
+                    <h3>Great Amenities</h3>
+                    <p>Squash courts, swimming pools, tanning, and Hot Yoga studios.</p>
+                </div>
+                <div class="col-lg-5 col-md-5 col-11 m-lg-3 m-md-3 mx-1 my-3 benefits-card wow fadeInUp">
+                    <h3>Nutrition</h3>
+                    <p>We'll provide you with the information you need to structure a healthy diet.</p>
+                </div>
+                <div class="col-lg-5 col-md-5 col-11 m-lg-3 m-md-3 mx-1 my-3 benefits-card wow fadeInUp">
+                    <h3>Women's Clubs</h3>
+                    <p>Over 100 of our locations are For Women clubs, providing a comfortable space to train for women..</p>
+                </div>
+                <div class="col-lg-5 col-md-5 col-11 m-lg-3 m-md-3 mx-1 my-3 benefits-card wow fadeInUp">
+                    <h3>Workout from anywhere</h3>
+                    <p>GoodLife On-Demand gives you unlimited access to over 500 workouts including strength, mind & body, cardio, and more.</p>
+                </div>
+            </div>
+        </section>
+        <section class="mb-5">
+            <div id="testimonial-owl" class="owl-carousel owl-theme testimonial my-3 py-4">
+                <div class="w-lg-50 w-75 m-auto text-center testimonial-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="../assets/images/avatar-1.png">
+                    </div>
+                    <p>Andrew O</p>
+                    <p class="message m-0 p-0">
+                        In May 2015, I decided I needed to do something just for me. I needed to do something all my own that would make me happy: lose the weight I&rsquo;d gained and get into the best shape of my life. My confidence started to soar with the weight dropping, muscles toning and strengthening, and people noticing the physical changes. That confidence showed in my smile, in my walk, everything about the new Karen attracted lots of attention.
+                    </p>
+                </div>
+                <div class="w-lg-50 w-75 m-auto text-center testimonial-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="../assets/images/avatar-2.png">
+                    </div>
+                    <p>Lizzy</p>
+                    <p class="message m-0 p-0">
+                        Before I started at GoodLife Fitness it was a struggle to keep up with everyday tasks. I always felt tired and uncomfortable about my body and also felt like my body was holding me back from doing the things that I wanted to do. But as I started to train and workout at GoodLife I have lost a substantial amount of weight and feel better than ever about my body. Now I can finally fit back into my favorite clothes!
+                    </p>
+                </div>
+                <div class="w-lg-50 w-75 m-auto text-center testimonial-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="../assets/images/avatar-3.png">
+                    </div>
+                    <p>Karen W</p>
+                    <p class="message m-0 p-0">
+                        Since I started going to GoodLife, my confidence sky rocketed. What makes me feel even better since I've been going to GoodLife is that the people around me see a huge difference and want me to educate them about a healthier life including what I do for exercise, and diet.
+                    </p>
+                </div>
+            </div>
+        </section>
         <section id="faq_section">
             <div class="custom_designed_heading_icon">
                 <img src="../assets/images/icon.png">
@@ -407,9 +472,65 @@
         </div>
     
     </footer>
+    <div id="scroll-to-top" onclick="topFunction()">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
     <script src="../assets/js/wow.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+  // Initiate the wowjs
+  new WOW().init();
+
+        $('#owl-carousel').owlCarousel({
+    loop: true,
+    dots: false,
+    items: 3,
+    responsive : {
+    0 : {
+        items: 1,
+        dots: true,  
+    },
+    768 : {
+        items: 2,
+        dots: true,
+    },
+    1280 : {
+        items: 3,
+        dots: false,
+    }
+}
+})
+
+$('#testimonial-owl').owlCarousel({
+    loop: true,
+    dots: true,
+    items: 1,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplaySpeed: 1000,
+    autoplayHoverPause:true,
+    slideTransition: 'linear',
+})
+
+
+        let mybutton = document.getElementById("scroll-to-top");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
 </body>
 
 </html>

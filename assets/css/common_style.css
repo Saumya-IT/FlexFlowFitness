@@ -211,6 +211,11 @@ textarea.invalid_input{
   }
   .custom_title::after{
     left:7%;
+    width: 60px;
+  }
+  .custom_title::before{
+    margin-left:8px;
+    width: 60px;
   }
   
     .custom_designed_heading_icon::after {
