@@ -38,6 +38,9 @@
     width: 40px;
     margin:auto 0;
 }
+.event-item:hover{
+    background-color: #c9819920;
+}
 
 .event-item:hover .readmore-btn i{
  padding-left:10px;
@@ -77,16 +80,26 @@
 /* event detail start */
 .event-detail-image{
 float: left;
-}
-.event-detail-image img{
-    height: 300px;
-    width: 500px;
-    margin: 0 20px;
-    background-size: cover;
+overflow: hidden;
+height: 300px;
+width: 500px;
+margin: 0 20px;
+transition: all 0.25s ease-in-out;
+background-size: cover;
     background-position: center;
     border-radius: 10px;
     border:1px solid #fff;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+   
+}
+.event-detail-image img{
+    height: 100%;
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+}
+.event-detail-image:hover img{
+    filter:brightness(80%);
+    transform:scale(1.1);
 }
 .event-detail-content p{
     white-space: pre-line;
