@@ -1,3 +1,21 @@
+@font-face {
+  font-family: SouthAustralia;
+  src: url(../fonts/SouthAustralia-Regular.ttf);
+}
+
+@font-face {
+  font-family: Rosseville;
+  src: url(../fonts/Rosseville-Regular.ttf);
+}
+@font-face {
+  font-family: Silhouetto;
+  src: url(../fonts/Silhouetto-Regular.ttf);
+}
+@font-face {
+  font-family: Kaleagnetta;
+  src: url(../fonts/Kaleagnetta.ttf);
+}
+
 #member,
 #tarining {
   height: 100vh;
@@ -166,9 +184,6 @@
     color: black;
     font-weight: 500;
 }
-
-
-
 
 .custom_designed_heading_icon {
   position: relative;
