@@ -69,11 +69,11 @@
                                 John Doe
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item active" href="./dashboard.html">Dashboard</a></li>
+                                <li><a class="dropdown-item" href="./dashboard.html">Dashboard</a></li>
                                 <li><a class="dropdown-item" href="#">Order Status</a></li>
                                 <!-- <li><a class="dropdown-item" href="#">Membership</a></li> -->
                                 <li><a class="dropdown-item" href="#">Product Review</a></li>
-                                <li><a class="dropdown-item" href="#">Testimonial</a></li>
+                                <li><a class="dropdown-item active" href="#">Testimonial</a></li>
                                 <li><a class="dropdown-item" href="./edit-profile.html">Edit Profile</a></li>
                                 <li><a class="dropdown-item" href="#">Sign Out</a></li>
                             </ul>
@@ -86,59 +86,22 @@
     <main>
         <section class="container mt-5">
             <div class="row">
-            <div class="dashboard-sidebar col-3 h-100 d-none d-lg-block d-md-block">
-                <a href="./dashboard.html" class="sidebar_link active"><div class="sidebar-tab active"><i class="fa-solid fa-house"></i> Dashboard</a></div>
-                <a href="#" class="sidebar_link"><div class="sidebar-tab"><i class="fa-solid fa-truck"></i> Order status</a></div>
-                <!-- <a href="#" class="sidebar_link"><div class="sidebar-tab"><i class="fa-solid fa-dumbbell"></i> Membership</a></div> -->
-                <a href="#" class="sidebar_link"><div class="sidebar-tab"><i class="fa-solid fa-star-half-stroke"></i> Product Review</a></div>
-                <a href="./testimonial.html" class="sidebar_link"><div class="sidebar-tab"><i class="fa-regular fa-comments"></i> Testimonial</a></div>
-                <a href="./edit-profile.html" class="sidebar_link"><div class="sidebar-tab"><i class="fa-solid fa-user"></i>&nbsp; Edit Profile</a></div>
-                <a href="#" class="sidebar_link"><div class="sidebar-tab"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a></div>
-            </div>
-            <div class="col-lg-9 col-12 px-lg-5 px-md-5">
-                <div class=" row dashboard">
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="col-lg-2 col-3">
-                                <img src="../assets/images/avatar-1.png" class="profile-image">
-                            </div>
-                            <div class="col-lg-10 col-9 m-0">
-                                <h4 class="m-0 p-0 mb-2">John Doe</h4>
-                                <p class="m-0 p-0"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp; +1 (345) 456-3456</p>
-                                <p class="m-0 p-0"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp; john.doe@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="dashboard-sidebar col-3 h-100 d-none d-lg-block d-md-block">
+                    <a href="./dashboard.html" class="sidebar_link"><div class="sidebar-tab"><i class="fa-solid fa-house"></i> Dashboard</a></div>
+                    <a href="#" class="sidebar_link"><div class="sidebar-tab"><i class="fa-solid fa-truck"></i> Order status</a></div>
+                    <!-- <a href="#" class="sidebar_link"><div class="sidebar-tab"><i class="fa-solid fa-dumbbell"></i> Membership</a></div> -->
+                    <a href="#" class="sidebar_link"><div class="sidebar-tab"><i class="fa-solid fa-star-half-stroke"></i> Product Review</a></div>
+                    <a href="./testimonial.html" class="sidebar_link active"><div class="sidebar-tab active"><i class="fa-regular fa-comments"></i> Testimonial</a></div>
+                    <a href="./edit-profile.html" class="sidebar_link"><div class="sidebar-tab"><i class="fa-solid fa-user"></i>&nbsp; Edit Profile</a></div>
+                    <a href="#" class="sidebar_link"><div class="sidebar-tab"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a></div>
                 </div>
-                <div class="col-12 mt-4 p-3 recent-membership d-lg-flex justify-content-between">
-                    <div>
-                    <h5 class="m-0 p-0">Premium Membership</h5>
-                    <p class="m-0 p-0">30 Sep, 2023 - 30 Nov, 2023</p>
-                </div>
-                    <button class="btn h-25 w-25">Renew</button>
-                </div>
-                <div class="col-12 my-3">
-                    <h4>Events</h4>
-                    <div class="container row">
-                        <div class="col-12 event-listing-cards">
-                            <p class="m-0 p-0 event-title">Get Flow, Get Flow - <span class="upcoming-badge">Upcoming</span></p>
-                            <p class="m-0 p-0 event-time"><i class="fa-solid fa-calendar-days"></i> 24 Nov, 2023  &nbsp;&nbsp;<i class="fa-solid fa-clock"></i> 5:00 PM to 7:00 PM</p> 
-                            <p class="m-0 p-0 event-location"><i class="fa-solid fa-location-dot"></i> 59 Hyden st, ON</p>
-                        </div>
-                        <div class="col-12 event-listing-cards">
-                            <p class="m-0 p-0 event-title">Get Flow, Get Flow - <span class="ongoing-badge">Ongoing</span></p>
-                            <p class="m-0 p-0 event-time"><i class="fa-solid fa-calendar-days"></i> 24 Nov, 2023  &nbsp;&nbsp;<i class="fa-solid fa-clock"></i> 5:00 PM to 7:00 PM</p> 
-                            <p class="m-0 p-0 event-location"><i class="fa-solid fa-location-dot"></i> 59 Hyden st, ON</p>
-                        </div>
-                        <div class="col-12 event-listing-cards">
-                            <p class="m-0 p-0 event-title">Get Flow, Get Flow - <span class="completed-badge">Completed</span></p>
-                            <p class="m-0 p-0 event-time"><i class="fa-solid fa-calendar-days"></i> 24 Nov, 2023  &nbsp;&nbsp;<i class="fa-solid fa-clock"></i> 5:00 PM to 7:00 PM</p> 
-                            <p class="m-0 p-0 event-location"><i class="fa-solid fa-location-dot"></i> 59 Hyden st, ON</p>
-                        </div>
-                    </div>
+                <div class="col-lg-9 col-12 px-5">
+                    <form id="testimonaial" class="m-0 p-0">
+                        <textarea class="input-field" name="message" placeholder="&nbsp;&nbsp;&#xf27a; &nbsp;Message*"></textarea>
+                        <input type="submit" value="Submit" class="btn solid" />
+                </form>
                 </div>
             </div>
-        </div>
         </section>
     </main>
 
@@ -278,6 +241,7 @@
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/owl.carousel.min.js"></script>
     <script src="../assets/js/wow.js"></script>
+    <script src="../assets/js/validate.min.js"></script>
     <script>
         // Initiate the wowjs
         new WOW().init();
@@ -321,6 +285,30 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
+
+        var loadFile = function(event) {
+    var output = document.getElementById('preview');
+    output.src = URL.createObjectURL(event.target.files[0]);
+    output.onload = function() {
+      URL.revokeObjectURL(output.src) // free memory
+    }
+  };
+
+  
+
+  $("#testimonaial").validate({
+    errorClass : "invalid_input",
+    rules:{
+        message:{
+        required:true,
+      },
+    },
+    messages:{
+        message:{
+        required:"Message field is required.",
+      },
+   }
+});
     </script>
 </body>
 

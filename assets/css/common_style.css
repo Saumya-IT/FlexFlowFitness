@@ -36,6 +36,10 @@ main{
   justify-content: center;
 }
 
+#navbar{
+  box-shadow: 2px 2px 12px rgba(128, 128, 128, 0.279);
+}
+
 .custom_designed_heading_icon img {
     height: 53px;
     width: 50px;

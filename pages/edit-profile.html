@@ -60,44 +60,69 @@
                                 <li><a class="dropdown-item" href="./Digital_Classes.html">Digital Classes</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item mx-2">
+                        <!-- <li class="nav-item mx-2">
                             <a href="./signup.html" style="text-decoration: none; color:white !important;"> <button class="btn m-0 h-75 w-100 pb-3 mt-1">Sign Up</button> </a>
-                        </li>
-                        <!-- <li class="nav-item mx-2 dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        </li> -->
+                        <li class="nav-item mx-2 dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Training
+                                John Doe
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Personal Training</a></li>
-                                <li><a class="dropdown-item" href="#">Pilates</a></li>
+                                <li><a class="dropdown-item" href="./dashboard.html">Dashboard</a></li>
+                                <li><a class="dropdown-item" href="#">Order Status</a></li>
+                                <!-- <li><a class="dropdown-item" href="#">Membership</a></li> -->
+                                <li><a class="dropdown-item" href="#">Product Review</a></li>
+                                <li><a class="dropdown-item" href="./testimonial.html">Testimonial</a></li>
+                                <li><a class="dropdown-item active" href="./edit-profile.html">Edit Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Sign Out</a></li>
                             </ul>
-                        </li> -->
+                        </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
     <main>
-        <section class="container mt-3">
+        <section class="container mt-5">
             <div class="row">
                 <div class="dashboard-sidebar col-3 h-100 d-none d-lg-block d-md-block">
-                    <div class="sidebar-tab active"><i class="fa-solid fa-house"></i> Dashboard</div>
-                    <div class="sidebar-tab"><i class="fa-solid fa-truck"></i> Order status</div>
-                    <div class="sidebar-tab"><i class="fa-solid fa-dumbbell"></i> Membership</div>
-                    <div class="sidebar-tab"><i class="fa-solid fa-star-half-stroke"></i> Product Review</div>
-                    <div class="sidebar-tab"><i class="fa-regular fa-comments"></i> Testimonial</div>
-                    <div class="sidebar-tab"><i class="fa-solid fa-user"></i>&nbsp; Edit Profile</div>
-                    <div class="sidebar-tab"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</div>
+                    <a href="./dashboard.html" class="sidebar_link"><div class="sidebar-tab"><i class="fa-solid fa-house"></i> Dashboard</a></div>
+                    <a href="#" class="sidebar_link"><div class="sidebar-tab"><i class="fa-solid fa-truck"></i> Order status</a></div>
+                    <!-- <a href="#" class="sidebar_link"><div class="sidebar-tab"><i class="fa-solid fa-dumbbell"></i> Membership</a></div> -->
+                    <a href="#" class="sidebar_link"><div class="sidebar-tab"><i class="fa-solid fa-star-half-stroke"></i> Product Review</a></div>
+                    <a href="./testimonial.html" class="sidebar_link"><div class="sidebar-tab"><i class="fa-regular fa-comments"></i> Testimonial</a></div>
+                    <a href="./edit-profile.html" class="sidebar_link active"><div class="sidebar-tab active"><i class="fa-solid fa-user"></i>&nbsp; Edit Profile</a></div>
+                    <a href="#" class="sidebar_link"><div class="sidebar-tab"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a></div>
                 </div>
-                <div class="col-8 px-5">
-                    <div class=" row edit-profile">
+                <div class="col-lg-9 col-12 px-5">
+                    <form id="edit_profile" class="m-0 p-0">
+                    <div class="row edit-profile text-center">
                         <label for="photo">
-                            <img src="../assets/images/avatar-1.png">
-                            <input type="file" class="d-none" id="photo">
+                            <img src="../assets/images/avatar-1.png" id="preview" style="height:100px; width:100px; border-radius: 10px;">
+                            <input type="file" class="d-none" id="photo" onchange="loadFile(event)">
                         </label>
-                        
+                        <div class="row p-0 m-0">
+                        <div class="col-lg-3 col-12 input-field w-lg-50">
+                            <i class="fas fa-user"></i>
+                            <input type="text" name="name" autocomplete="off" placeholder="Name" />
+                        </div>
+                        <div class="col-lg-3 col-12 input-field w-lg-50">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" name="email" autocomplete="off" placeholder="Email" />
+                        </div>
                     </div>
+                    <div class="row p-0 m-0">
+                        <div class="col-lg-3 input-field">
+                            <i class="fas fa-phone"></i>
+                            <input type="tel" name="phone" autocomplete="off" placeholder="Phone" />
+                        </div>
+                        <div class="col-lg-3 mt-2">
+                        <button type="submit" class="btn">Edit <i class="fa-solid fa-pencil"></i></button>
+                        </div>
+                        </div>
+                    </div>
+                </form>
                 </div>
             </div>
         </section>
@@ -239,6 +264,7 @@
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/owl.carousel.min.js"></script>
     <script src="../assets/js/wow.js"></script>
+    <script src="../assets/js/validate.min.js"></script>
     <script>
         // Initiate the wowjs
         new WOW().init();
@@ -282,6 +308,44 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
+
+        var loadFile = function(event) {
+    var output = document.getElementById('preview');
+    output.src = URL.createObjectURL(event.target.files[0]);
+    output.onload = function() {
+      URL.revokeObjectURL(output.src) // free memory
+    }
+  };
+
+  
+
+  $("#edit_profile").validate({
+    errorClass : "invalid_input",
+    rules:{
+        name:{
+        required:true,
+      },
+      email:{
+        required:true,
+        email:true
+      },
+      phone:{
+        required:true,
+      },
+    },
+    messages:{
+        name:{
+        required:"Name field is required.",
+      },
+      email:{
+        required:"Email field is required.",
+        email:"Invalid email."
+      },
+      phone:{
+         required:"Phone field is required",
+      }
+   }
+});
     </script>
 </body>
 
