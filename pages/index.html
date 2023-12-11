@@ -83,7 +83,7 @@
 
   <main>
     <section id="banner">
-      <div id="carouselExampleIndicators" class="carousel slide">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-wrap="true" data-bs-pause="true">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -118,16 +118,6 @@
             </div>
           </div>
         </div>
-        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button> -->
       </div>
     </section>
 
@@ -148,7 +138,7 @@
                   Studios that inspire you to perform and luxury amenities that
                   keep you feeling your best.
                 </p>
-                <a class="member-link text-black fw-medium">View Membership Benefits</a>
+                <a class="member-link text-black fw-medium text-decoration-underline" href="/pages/membership.html">View Membership Benefits</a>
               </div>
             </div>
           </div>
@@ -164,8 +154,10 @@
         <div class="training-overlay"></div>
         <img src="../assets/images/yoga_2.jpg" class="d-lock w-100 member-background" alt="training-background" />
         <div class="row position-absolute top-0 bottom-0 end-0 start-0 m-0">
-          <div class="left-content col-12 col-sm-4 position-relative">
-
+          <div class="left-content col-12 d-none d-lg-block col-sm-4 position-relative h-100">
+            <div class="h-100 d-flex">
+              <h1 class="text-center text-white m-auto" style="z-index: 15; font-size: 2.5rem;font-family: Rosseville;line-height: 4rem;">" The body achieves what the mind believes"</h1>
+            </div>
           </div>
           <div class="right-content col-12 col-sm-8 position-relative p-2">
             <div class="member-card position-absolute top-0 bottom-0 end-0 start-0 text-black d-flex p-sm-5 m-0">
@@ -178,7 +170,7 @@
                   <p class="member-body mb-4 fw-normal">
                     Classes curated and developed by the industry's best talent, bringing results through innovation.
                   </p>
-                  <a class="member-link text-black fw-medium">Discover Classes</a>
+                  <a class="member-link text-black fw-medium text-decoration-underline" href="/pages/Digital_Classes.html">Discover Classes</a>
                 </div>
 
                 <div class="member-item p-5 bg-white mx-3 my-3 h-50 col-auto col-sm-12 rounded">
@@ -189,7 +181,7 @@
                   <p class="member-body mb-4 fw-normal">
                     Performance at its highest level with renowned Personal Training.
                   </p>
-                  <a class="member-link text-black fw-medium">Discover Personal Training</a>
+                  <a class="member-link text-black fw-medium text-decoration-underline" href="/pages/personal-training.html">Discover Personal Training</a>
                 </div>
 
                 <div class="member-item p-5 bg-white mx-3 my-3 h-50 col-auto col-sm-12 rounded">
@@ -200,7 +192,7 @@
                   <p class="member-body mb-4 fw-normal">
                     A purely authentic Pilates experience that strengthens and creates balance in the body.
                   </p>
-                  <a class="member-link text-black fw-medium">Discover Pilates</a>
+                  <a class="member-link text-black fw-medium text-decoration-underline" href="/pages/pilates.html">Discover Pilates</a>
                 </div>
 
               </div>
@@ -225,12 +217,12 @@
                   Develop Positive, Peaceful & Calm Mind While You Do Yoga.
                 </h1>
                 <p class="row my-4 text-justify bring-front">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatibus corrupti laborum aut ut
-                  eaque nisi nesciunt quae omnis excepturi aperiam dolore tenetur et qui, distinctio repudiandae quia,
-                  quidem delectus.
+                  Embark on a transformative journey with our yoga learning programs. Immerse yourself in the ancient practice
+                  of yoga and experience the profound benefits it brings to your body and mind. Our expert instructors will
+                  guide you through each step, fostering a positive, peaceful, and calm state of being.
                 </p>
                 <div class="row p-3 bring-front">
-                  <button class="btn btn-outline-dark col-auto p-3 px-5 fw-bold">Read More</button>
+                  <button class="btn col-auto p-1 px-2 fw-bold">Read More</button>
                 </div>
               </div>
             </div>
@@ -252,47 +244,47 @@
       <h4 class="text-center fw-bold">What we offer</h4>
 
       <div class="row m-0 p-0 mt-lg-0 mt-5 d-flex justify-content-center">
-        <div class="service_listing col-12 col-lg-3 col-sm-6 text-center p-4 mx-5   my-1">
+        <div class="service_listing col-12 col-lg-3 col-sm-6 text-center p-4 mx-5 my-1">
           <div class="service_listing_image mb-4">
             <img src="../assets/images/yoga.png">
           </div>
-          <h5>Heal Your Emotions</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et.</p>
+          <h5>Hatha Yoga</h5>
+          <p>Experience the balance of body and mind through traditional Hatha Yoga postures and breath control techniques.</p>
         </div>
         <div class="service_listing col-12 col-lg-3 col-sm-6 text-center p-4 mx-5 my-1">
           <div class="service_listing_image mb-4">
             <img src="../assets/images/yoga.png">
           </div>
-          <h5>Heal Your Emotions</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et.</p>
+          <h5>Vinyasa Flow</h5>
+          <p>Flow seamlessly from one pose to another, connecting breath with movement in our dynamic Vinyasa Flow classes.</p>
         </div>
         <div class="service_listing col-12 col-lg-3 col-sm-6 text-center p-4 mx-5 my-1">
           <div class="service_listing_image mb-4">
             <img src="../assets/images/yoga.png">
           </div>
-          <h5>Heal Your Emotions</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et.</p>
+          <h5>Yin Yoga</h5>
+          <p>Deeply relax and release tension in your connective tissues with our slow-paced and meditative Yin Yoga sessions.</p>
         </div>
         <div class="service_listing col-12 col-lg-3 col-sm-6 text-center p-4 mx-5 my-1">
           <div class="service_listing_image mb-4">
             <img src="../assets/images/yoga.png">
           </div>
-          <h5>Heal Your Emotions</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et.</p>
+          <h5>Kundalini Yoga</h5>
+          <p>Awaken your dormant energy through dynamic movements, breathing exercises, and meditation in Kundalini Yoga.</p>
         </div>
         <div class="service_listing col-12 col-lg-3 col-sm-6 text-center p-4 mx-5 my-1">
           <div class="service_listing_image mb-4">
             <img src="../assets/images/yoga.png">
           </div>
-          <h5>Heal Your Emotions</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et.</p>
+          <h5>Restorative Yoga</h5>
+          <p>Nurture your body and mind with restful poses and props, promoting deep relaxation in Restorative Yoga.</p>
         </div>
         <div class="service_listing col-12 col-lg-3 col-sm-6 text-center p-4 mx-5 my-1">
           <div class="service_listing_image mb-4">
             <img src="../assets/images/yoga.png">
           </div>
-          <h5>Heal Your Emotions</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et.</p>
+          <h5>Ashtanga Yoga</h5>
+          <p>Embark on a challenging and structured practice with the dynamic series of Ashtanga Yoga postures.</p>
         </div>
       </div>
     </section>
@@ -303,10 +295,8 @@
         <div class="container-fluid m-auto">
           <div class="text-white text-center">
             <h2 class="my-4">Become A Yoga Member</h2>
-            <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quod repudiandae maxime
-              tenetur fuga
-              temporibus, velit rem culpa minima dolore.</p>
-            <button class="btn btn-light col-auto  fw-bold">Join Now</button>
+            <p class="my-4">Unlock inner peace and vitality through the transformative practice of yoga. Join our community dedicated to holistic well-being and discover the path to a healthier, balanced life.</p>
+            <button class="btn btn-light col-auto fw-bold">Join Now</button>
           </div>
         </div>
       </div>
@@ -408,8 +398,7 @@
                     Toronto, ON
                 </div>
                 <div class="footer-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rerum earum corrupti culpa optio
-                    vel minus, architecto.
+                  Discover serenity in motion with Flex Flow Fitness, where mindful movements seamlessly intertwine with holistic well-being.
                 </div>
 
                 <ul class="social-list">
@@ -518,6 +507,7 @@
     </div>
 
 </footer>
+
 
   <script src="https://use.fontawesome.com/1744f3f671.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
