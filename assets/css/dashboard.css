@@ -7,16 +7,31 @@
     font-weight: 500;
 }
 
+.sidebar_link{
+color: #613d65;
+}
+.sidebar_link.active{
+    color:#fff !important;
+    }
+
+.dashboard-sidebar .sidebar-tab .active .sidebar_link{
+    color:#fff !important;
+}
 .dashboard-sidebar .sidebar-tab{
     padding:10px;
     border-radius: 10px;
+    transition: all 0.25s ease-in-out;
 }
 .dashboard-sidebar .sidebar-tab.active{
-    background-color:#734978;
-    color:#fff;
+    background-color:#734978 !important;
+    color:#fff !important;
 }
 .dashboard-sidebar .sidebar-tab i{
     margin-right:10px;
+}
+
+.dashboard-sidebar .sidebar-tab:hover{
+    background-color: #73497838;
 }
 /* dashboard sidear end */
 
@@ -84,6 +99,12 @@
     border-radius: 12px;
     font-size: 11px;
     padding:3px;
+}
+
+.invalid_input{
+    color:red;
+    width: 200px;
+    font-size: 12px;
 }
 /* main dashboard  end */
 

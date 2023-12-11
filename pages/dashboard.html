@@ -21,7 +21,7 @@
 <body>
     <header id="navbar">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="./index.html">
                 <img src="../assets/images/logo.png" alt="Website-Logo" class="img-fluid flex_flow_logo m-0 p-0" />
             </a>
             <nav class="navbar navbar-expand-lg float-end my-2">
@@ -33,10 +33,22 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item mx-2">
-                            <a class="nav-link active" aria-current="page" href="#">Clubs</a>
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#">Members Benefits</a>
+                            <a class="nav-link" href="./about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="./membership.html">Membership</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="./contactus.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="./our-teachers.html">Our Instructors</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="./events-listing.html">Events</a>
                         </li>
                         <li class="nav-item mx-2 dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -44,18 +56,26 @@
                                 Classes
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Group Fitness</a></li>
-                                <li><a class="dropdown-item" href="#">Digital Classes</a></li>
+                                <li><a class="dropdown-item" href="./info_yoga.html">Yoga Information</a></li>
+                                <li><a class="dropdown-item" href="./Digital_Classes.html">Digital Classes</a></li>
                             </ul>
                         </li>
+                        <!-- <li class="nav-item mx-2">
+                            <a href="./signup.html" style="text-decoration: none; color:white !important;"> <button class="btn m-0 h-75 w-100 pb-3 mt-1">Sign Up</button> </a>
+                        </li> -->
                         <li class="nav-item mx-2 dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Training
+                                John Doe
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Personal Training</a></li>
-                                <li><a class="dropdown-item" href="#">Pilates</a></li>
+                                <li><a class="dropdown-item active" href="./dashboard.html">Dashboard</a></li>
+                                <li><a class="dropdown-item" href="#">Order Status</a></li>
+                                <!-- <li><a class="dropdown-item" href="#">Membership</a></li> -->
+                                <li><a class="dropdown-item" href="#">Product Review</a></li>
+                                <li><a class="dropdown-item" href="#">Testimonial</a></li>
+                                <li><a class="dropdown-item" href="./edit-profile.html">Edit Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Sign Out</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -64,18 +84,18 @@
         </div>
     </header>
     <main>
-        <section class="container mt-3">
+        <section class="container mt-5">
             <div class="row">
             <div class="dashboard-sidebar col-3 h-100 d-none d-lg-block d-md-block">
-                <div class="sidebar-tab active"><i class="fa-solid fa-house"></i> Dashboard</div>
-                <div class="sidebar-tab"><i class="fa-solid fa-truck"></i> Order status</div>
-                <div class="sidebar-tab"><i class="fa-solid fa-dumbbell"></i> Membership</div>
-                <div class="sidebar-tab"><i class="fa-solid fa-star-half-stroke"></i> Product Review</div>
-                <div class="sidebar-tab"><i class="fa-regular fa-comments"></i> Testimonial</div>
-                <div class="sidebar-tab"><i class="fa-solid fa-user"></i>&nbsp; Edit Profile</div>
-                <div class="sidebar-tab"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</div>
+                <a href="./dashboard.html" class="sidebar_link active"><div class="sidebar-tab active"><i class="fa-solid fa-house"></i> Dashboard</a></div>
+                <a href="#" class="sidebar_link"><div class="sidebar-tab"><i class="fa-solid fa-truck"></i> Order status</a></div>
+                <!-- <a href="#" class="sidebar_link"><div class="sidebar-tab"><i class="fa-solid fa-dumbbell"></i> Membership</a></div> -->
+                <a href="#" class="sidebar_link"><div class="sidebar-tab"><i class="fa-solid fa-star-half-stroke"></i> Product Review</a></div>
+                <a href="./testimonial.html" class="sidebar_link"><div class="sidebar-tab"><i class="fa-regular fa-comments"></i> Testimonial</a></div>
+                <a href="./edit-profile.html" class="sidebar_link"><div class="sidebar-tab"><i class="fa-solid fa-user"></i>&nbsp; Edit Profile</a></div>
+                <a href="#" class="sidebar_link"><div class="sidebar-tab"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a></div>
             </div>
-            <div class="col-lg-8 col-12 px-lg-5 px-md-5">
+            <div class="col-lg-9 col-12 px-lg-5 px-md-5">
                 <div class=" row dashboard">
                     <div class="col-12">
                         <div class="row">
@@ -137,8 +157,7 @@
                         Toronto, ON
                     </div>
                     <div class="footer-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rerum earum corrupti culpa optio
-                        vel minus, architecto.
+                        Discover serenity in motion with Flex Flow Fitness, where mindful movements seamlessly intertwine with holistic well-being
                     </div>
 
                     <ul class="social-list">

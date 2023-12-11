@@ -22,6 +22,10 @@ header{
     background: #fff;
 }
 
+.dropdown-item.active, .dropdown-item:active{
+  background-color: #734978;
+}
+
 main{
     padding-top: 60px;
 }
@@ -30,6 +34,10 @@ main{
   position: relative;
   display: flex;
   justify-content: center;
+}
+
+#navbar{
+  box-shadow: 2px 2px 12px rgba(128, 128, 128, 0.279);
 }
 
 .custom_designed_heading_icon img {

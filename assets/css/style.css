@@ -63,11 +63,6 @@ ion-icon {
   /* background-color: turquoise; */
 }
 
-.flex_flow_logo {
-  /* height: 60px !important; */
-  /* margin: 8px 0 0 0 !important; */
-}
-
 .banner_image {
   position: relative;
   height: 90vh;
@@ -270,12 +265,6 @@ ion-icon {
 
   #tagline :nth-child(2) {
     font-size: 1.5rem;
-  }
-}
-
-/* Media Query for Large screens */
-@media (min-width: 1281px) {
-  .carousel-text-overlay {
   }
 }
 
