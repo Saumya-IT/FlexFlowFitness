@@ -1,58 +1,72 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    /* font-family: 'Poppins', sans-serif; */
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* font-family: 'Poppins', sans-serif; */
 }
 
 .container-2 {
-    max-width: 100%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .container-2 h2 {
-    text-align: center;
-    color: #7c4d7e;
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-
-  .class-card {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin: 20px 0;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-    margin: 1.5rem auto;
-    width: 80%;
-  }
-
-  .class-card:hover {
-    transform: scale(1.05);
-  }
-
-  .class-header {
-    background-color: #7c4d7e;
-    color: #fff;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Style the sections */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
+.container-2 h2 {
+  text-align: center;
+  color: #7c4d7e;
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
-/* Style class cards */
 .class-card {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 20px 0;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  margin: 1.5rem auto;
+  width: 80%;
 }
 
+.class-card:hover {
+  transform: scale(1.05);
+}
+
+.class-header {
+  background-color: #7c4d7e;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+#classes h3 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+#classes .class-content {
+  padding: 20px;
+}
+
+#classes p {
+  color: #555;
+  line-height: 1.6;
+}
+
+#classes h4 {
+  color: #7c4d7e;
+}
+
+#classes ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+#classes li {
+  margin-bottom: 5px;
+  }
