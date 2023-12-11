@@ -1,181 +1,143 @@
-/* CSS for the Yoga Section */
-#yoga {
-    background-color: white; 
-    padding-top: auto; 
-    padding-top: 100px;
-    
-    display: flex;
-}
-
-.benefits {
-    display: flex; 
-    justify-content: space-around;
-    align-items:center; 
-    flex-wrap: wrap; 
-}
-
-/* CSS for the "Information about Yoga" section */
-#yoga .Info {
-    text-align: center; 
-}
-
-#yoga .Info h1 {
-    font-size: 48px; 
-    background-image: linear-gradient(-45deg, #fec1503f, #e5d1d7b4, #cac0cb9d), url('../assets/images/y1.jpeg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-#yoga .Info li {
-    text-align: left;
-    margin: 10px 0; 
-    font-size: 16px;
-}
-
-/* CSS for the "Yoga Styles" section */
-
-.yoga-details .types {
-    text-align: center; 
-}
-
-.yoga-details .types h2 {
-    font-size: 24px; 
-    margin-bottom: 20px; 
-}
-
-.yoga-details .types p {
-    text-align: left; 
-    margin: 10px 0; 
-    font-size: 16px;
-}
-
-.yoga-details .types ul {
-    text-align: left; 
-    list-style: none; 
-    padding: 0;
-}
-
-.yoga-details .types li {
-    margin: 10px 0;
-    font-size: 16px;
-}
-
-.yoga-details .types li strong {
-    font-weight: bold;
-}
-
-/* CSS for the "Benefits of Yoga" section */
-#yoga-details .benefits_of_yoga {
-    text-align: center; 
-}
-
-#yoga-details .benefits_of_yoga h2 {
-    font-size: 24px;
-    margin-bottom: 20px; 
-}
-
-#yoga-details .benefits {
-    display: flex;
-    justify-content: center; 
-}
-
-#yoga-details .benefit {
-    text-align: center; 
-    margin: 0 20px; 
-    max-width: 300px; 
-}
-
-#yoga-details .benefit img {
-    width: 100%; 
-}
-
-#yoga-details .benefit p {
-    font-size: 16px; 
-    margin-top: 10px; 
-}
-
-/* CSS for the "Yoga for Beginners" section */
-.yoga-details .beginner {
-    text-align: center; 
-}
-
-.yoga-details .beginner h2 {
-    font-size: 24px; 
-    margin-bottom: 20px; 
-}
-
-.yoga-details .beginner p {
-    text-align: left; 
-    margin: 10px 0; 
-    font-size: 16px; 
-}
-
-.yoga-details .beginner ol {
-    text-align: left;
-    list-style-type: none;
-    padding: 0; 
-}
-
-.yoga-details .beginner li {
-    font-size: 16px;
-    margin-bottom: 20px; 
-}
-
-.yoga-details .beginner img {
-    width: 100%; 
-}
-
-/* CSS for the "Advanced Yoga Practices" section */
-.yoga-details .advanced {
+#inner_banner_section h1 {
     text-align: center;
-}
-
-.yoga-details .advanced h2 {
-    font-size: 24px; 
-    margin-bottom: 20px; 
-}
-
-.yoga-details .advanced p {
-    text-align: left; 
-    margin: 10px 0;
-    font-size: 16px; 
-}
-
-.yoga-details .advanced video {
-    width: 100%; 
-    max-width: 400px; 
+    padding-top: 60px;
 }
 
 #yoga {
-    background-image: url('../assets/images/yoga-background.jpg');
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-image: url('../images/into_yoga1.webp');
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 20px 0;
-    color: black; /* Text color */
+    background-position: left;
+    padding: 25%;
+    color: white;
+    text-align: center;
+
+}
+
+#yoga .Info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 50%; 
+    padding: 30px;
+    color: white; 
+    font-size: 14px;
+    line-height: 1.4; 
 }
 
 .yoga-details {
-    background-color: #e5d1d777; /* Background color */
+    background-image: url('../images/y3.jpg');
+    background-size: cover;
+    background-position: center;
     padding: 20px;
-    color: #000; /* Text color */
+    color: #ffffff;
+    text-align: center;
 }
 
 #yoga-details1 {
-    background-color: #cac0cb71; /* Background color */
-    padding: 20px;
-    color: #000; /* Text color */
+    background-image: linear-gradient(-45deg, #763f04e2, #6f0424ea, #5c0564db), url('../images/Yoga\ Benefits.png');
+    background-size: 250px;
+    padding: 30px;
+    text-align: center;
+    color: #ffffff;
+    justify-content: space-bet;
 }
 
 .yoga-details2 {
-    background-color: #75497b; /* Background color */
-    padding: 20px;
-    color: #fff; /* Text color */
+    background-image: linear-gradient(-45deg, #763f04e2, #6f0424ea, #5c0564db), url('../images/y2.jpeg');
+    color: #ffffff;
+    background-size: 217px;
 }
 
-.yoga-details3 {
-    background-color: #e5d1d777; /* Background color */
-    padding: 20px;
-    color: #000; /* Text color */
+.yoga-details2 p {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.benefits {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  ol {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .yoga-details2,
+  .yoga-details3 {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+  }
+  .sidebar {
+    float: left;
+    width: 100%;
+  }
+  .image {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .sidebar-item {
+    margin-bottom: 40px;
+  }
+  .sidebar-item img {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .yoga-details3 {
+    background-image: url('../images/Advanced_yoga.png');
+    background-size: cover;
+    background-position: center;
+    padding: 250px;
+  }
+
+  .yoga-details3 .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+  .content {
+    display: inline-block;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #ffffff;
+  }
+  
+  .advanced-text {
+    flex: 0;
+    margin-right: 100px;
+  }
+  
+  .image-container {
+    flex: 1;
+    position: relative;
+  }
+  
+  .image-container video {
+    max-width: 100%;
+    height: auto;
+    
+    top: 0;
+    left: 1;
+  }
+  
